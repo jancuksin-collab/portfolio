@@ -1,0 +1,182 @@
+backend:
+  name: github
+  repo: jancuksin-collab/portfolio
+  branch: main
+  base_url: https://8s2y5ksfguf4.space.minimax.io
+  auth_endpoint: api/auth
+
+# Branch tempat preview (opsional)
+publish_mode: editorial_workflow
+
+# Live preview URL
+site_url: https://jancuksin-collab.github.io/portfolio
+display_url: https://jancuksin-collab.github.io/portfolio
+logo_url: https://api.iconify.design/mdi/book-open-page-variant.svg?color=%23facc15
+
+# Tell the CMS where the assets live
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+# Lokalisasi Indonesia
+locale: id
+
+collections:
+  - name: "profile"
+    label: "Profil Utama"
+    label_singular: "Profil"
+    description: "Data diri utama, bio, dan kontak."
+    files:
+      - name: "profile"
+        label: "Informasi Profil"
+        file: "data/profile.json"
+        fields:
+          - { label: "Nama Lengkap", name: "name", widget: "string" }
+          - { label: "Verified Badge", name: "verified", widget: "boolean", default: true, required: false }
+          - { label: "Title (HTML)", name: "title", widget: "string" }
+          - { label: "Lokasi", name: "location", widget: "string" }
+          - { label: "Status (Onsite/Remote/Hybrid)", name: "status", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Bio Paragraf 1 (HTML)", name: "bio_id", widget: "text" }
+          - { label: "Bio Paragraf 2 (HTML)", name: "bio_id_2", widget: "text" }
+          - { label: "Quote / Moto", name: "quote", widget: "string" }
+          - { label: "Tentang Paragraf 1 (HTML)", name: "about_id", widget: "text" }
+          - { label: "Tentang Paragraf 2 (HTML)", name: "about_id_2", widget: "text" }
+
+  - name: "skills"
+    label: "Keahlian (Skills)"
+    files:
+      - name: "skills"
+        label: "Daftar Keahlian"
+        file: "data/skills.json"
+        fields:
+          - name: "categories"
+            label: "Kategori Filter"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Label Tampil", name: "label", widget: "string" }
+              - { label: "Jumlah (auto-calculated, abaikan)", name: "count", widget: "number", value_type: "int", required: false }
+          - name: "skills"
+            label: "Daftar Skill"
+            widget: "list"
+            fields:
+              - { label: "Nama Skill", name: "name", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string", default: "📖" }
+              - { label: "Kategori", name: "category", widget: "select", options: ["mengajar", "keilmuan", "riset", "bahasa", "kepemimpinan"] }
+
+  - name: "achievements"
+    label: "Pencapaian / Prestasi"
+    files:
+      - name: "achievements"
+        label: "Daftar Prestasi"
+        file: "data/achievements.json"
+        fields:
+          - name: "achievements"
+            label: "Prestasi"
+            widget: "list"
+            fields:
+              - { label: "Judul Prestasi", name: "title", widget: "string" }
+              - { label: "Tingkat / Detail", name: "level", widget: "string" }
+              - { label: "Tahun", name: "year", widget: "number", value_type: "int" }
+              - { label: "Medali (gold/silver/bronze/cert)", name: "medal", widget: "select", options: ["gold", "silver", "bronze", "cert"], default: "gold" }
+
+  - name: "projects"
+    label: "Proyek"
+    files:
+      - name: "projects"
+        label: "Daftar Proyek"
+        file: "data/projects.json"
+        fields:
+          - name: "projects"
+            label: "Proyek"
+            widget: "list"
+            fields:
+              - { label: "Nama Proyek", name: "title", widget: "string" }
+              - { label: "Tag Periode (mis. Pendidikan · 2023)", name: "tag", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string" }
+              - { label: "Warna Aksen (hex)", name: "color", widget: "string", default: "#facc15" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - name: "tags"
+                label: "Tag Proyek"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+
+  - name: "career"
+    label: "Karier &amp; Organisasi"
+    files:
+      - name: "career"
+        label: "Pengalaman Kerja &amp; Organisasi"
+        file: "data/career.json"
+        fields:
+          - name: "career"
+            label: "Pengalaman Kerja"
+            widget: "list"
+            fields:
+              - { label: "Posisi", name: "role", widget: "string" }
+              - { label: "Organisasi / Institusi", name: "org", widget: "string" }
+              - { label: "Periode (mis. 2024 – Sekarang)", name: "period", widget: "string" }
+              - { label: "Tipe (Onsite/Remote/dll)", name: "type", widget: "string" }
+              - { label: "Icon (emoji)", name: "icon", widget: "string", default: "🏫" }
+          - name: "organizations"
+            label: "Pengalaman Organisasi"
+            widget: "list"
+            fields:
+              - { label: "Tahun", name: "year", widget: "number", value_type: "int" }
+              - { label: "Posisi / Peran", name: "role", widget: "string" }
+              - { label: "Organisasi / Konteks", name: "org", widget: "string" }
+
+  - name: "education"
+    label: "Pendidikan"
+    files:
+      - name: "education"
+        label: "Riwayat Pendidikan"
+        file: "data/education.json"
+        fields:
+          - name: "education"
+            label: "Pendidikan"
+            widget: "list"
+            fields:
+              - { label: "Tahun (mis. 2018 – 2024)", name: "year", widget: "string" }
+              - { label: "Gelar / Jurusan (HTML allowed)", name: "degree", widget: "string" }
+              - { label: "Institusi", name: "school", widget: "string" }
+              - { label: "IPK / Nilai", name: "gpa", widget: "string" }
+              - { label: "NIM", name: "nim", widget: "string", required: false }
+              - { label: "Status (Lulus/Aktif/dll)", name: "status", widget: "string" }
+
+  - name: "research"
+    label: "Riset, Konferensi &amp; Pelatihan"
+    files:
+      - name: "research"
+        label: "Riset, Konferensi, Pelatihan"
+        file: "data/research.json"
+        fields:
+          - name: "research"
+            label: "Pengalaman Riset"
+            widget: "list"
+            fields:
+              - { label: "Tahun", name: "year", widget: "number", value_type: "int" }
+              - { label: "Judul Riset", name: "title", widget: "string" }
+              - { label: "Sumber Dana / Konteks", name: "source", widget: "string" }
+          - name: "conferences"
+            label: "Konferensi &amp; Seminar"
+            widget: "list"
+            fields:
+              - { label: "Tahun", name: "year", widget: "number", value_type: "int" }
+              - { label: "Judul Kegiatan", name: "title", widget: "string" }
+              - { label: "Penyelenggara", name: "org", widget: "string" }
+              - { label: "Partisipasi (Peserta/Pembicara/Panitia)", name: "role", widget: "string" }
+              - { label: "Pembicara (highlight)?", name: "speaker", widget: "boolean", default: false, required: false }
+          - name: "trainings"
+            label: "Pelatihan / Workshop"
+            widget: "list"
+            fields:
+              - { label: "Tanggal (YYYY-MM-DD)", name: "date", widget: "string" }
+              - { label: "Nama Pelatihan", name: "name", widget: "string" }
+
+# Settings
+settings:
+  - name: "general"
+    label: "Pengaturan Umum"
+    fields:
+      - { label: "Judul Site", name: "site_title", widget: "string", default: "Portfolio Muhammad Nur Pauzi" }
+      - { label: "Meta Deskripsi", name: "site_description", widget: "text", default: "Portfolio pribadi Muhammad Nur Pauzi Al Bustomi" }

@@ -1,0 +1,26 @@
+{
+  "research": [
+    {
+      "year": 2024,
+      "title": "Pemaksaan Perkawinan dalam Maqashid Asy-Syariah; Studi atas Undang-Undang Nomor 12 Tahun 2022",
+      "source": "Sumber Dana: Pribadi"
+    },
+    {
+      "year": 2023,
+      "title": "Perbedaan Pendapat tentang Kesetaraan Gender dalam Kepemimpinan Rumah Tangga Menurut Hukum Islam",
+      "source": "Sumber Dana: Pribadi"
+    }
+  ],
+  "conferences": [
+    { "year": 2023, "title": "Seminar Hasil Studi Praksis Sosial", "org": "Mahad Aly Kebon Jambu", "role": "Pembicara", "speaker": true },
+    { "year": 2024, "title": "Islam and Christianity in Europe and Southeast Asia", "org": "UIII × Yerevan State University", "role": "Peserta", "speaker": false },
+    { "year": 2024, "title": "Islamic Feminism: Evaluation and the Way Forward", "org": "Faculty of Islamic Studies UIII × Islamic Global Challenges", "role": "Peserta", "speaker": false },
+    { "year": 2022, "title": "Halaqoh Fiqh Peradaban NU", "org": "DEMA Mahad Aly Kebon Jambu × Pesantren Kebon Jambu", "role": "Peserta", "speaker": false },
+    { "year": 2020, "title": "Masa Depan Ulama Perempuan", "org": "Mahad Aly Kebon Jambu × KUPI", "role": "Peserta", "speaker": false }
+  ],
+  "trainings": [
+    { "date": "2023-12-04", "name": "Kursus Bahasa Inggris — SMART International Language College" },
+    { "date": "2023-09-25", "name": "Kursus Bahasa Inggris — Titik Nol English Course" },
+    { "date": "2018-04-23", "name": "Kursus Bahasa Arab — Markaz Arabiyah" }
+  ]
+}

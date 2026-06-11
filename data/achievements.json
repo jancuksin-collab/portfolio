@@ -1,0 +1,10 @@
+{
+  "achievements": [
+    { "title": "Juara 1 Lomba Baca Kitab Fath Al-Muin", "level": "Kota/Kabupaten", "year": 2018, "medal": "gold" },
+    { "title": "Juara 1 Lomba Baca Kitab Matan Taqrib", "level": "Kota/Kabupaten", "year": 2014, "medal": "gold" },
+    { "title": "Juara 2 Lomba Baca Kitab Fath Al-Qarib", "level": "Kota/Kabupaten", "year": 2021, "medal": "silver" },
+    { "title": "Juara 3 Lomba Baca Kitab Ihya Ulumuddin", "level": "Provinsi", "year": 2019, "medal": "bronze" },
+    { "title": "Juara 1 Cerdas Cermat Agama (CCA) Kelas VII", "level": "Sekolah", "year": 2012, "medal": "gold" },
+    { "title": "TOEFL ITP — Skor 457", "level": "Sertifikat 2024 · Berlaku hingga 4 Februari 2026", "year": 2024, "medal": "cert" }
+  ]
+}

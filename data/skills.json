@@ -1,0 +1,39 @@
+{
+  "categories": [
+    { "id": "mengajar", "label": "Mengajar", "count": 6 },
+    { "id": "keilmuan", "label": "Keilmuan", "count": 9 },
+    { "id": "riset", "label": "Riset", "count": 5 },
+    { "id": "bahasa", "label": "Bahasa", "count": 2 },
+    { "id": "kepemimpinan", "label": "Kepemimpinan", "count": 6 }
+  ],
+  "skills": [
+    { "name": "Fiqh", "icon": "📖", "category": "mengajar" },
+    { "name": "Ushul Fiqh", "icon": "📖", "category": "mengajar" },
+    { "name": "Hukum Keluarga Islam", "icon": "📖", "category": "mengajar" },
+    { "name": "Tahsinul Akhlak", "icon": "📖", "category": "mengajar" },
+    { "name": "Baca Kitab Kuning", "icon": "📖", "category": "mengajar" },
+    { "name": "Cerdas Cermat Agama", "icon": "📖", "category": "mengajar" },
+    { "name": "Tafsir", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Hadits", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Fath Al-Muin", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Matan Taqrib", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Ihya Ulumuddin", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Fath Al-Qarib", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Maqashid Asy-Syariah", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Fiqh Peradaban", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Hermeneutika gender", "icon": "🕌", "category": "keilmuan" },
+    { "name": "Penelitian Kualitatif", "icon": "🔬", "category": "riset" },
+    { "name": "Studi Naskah", "icon": "🔬", "category": "riset" },
+    { "name": "Analisis Fiqh", "icon": "🔬", "category": "riset" },
+    { "name": "Penulisan Akademik", "icon": "🔬", "category": "riset" },
+    { "name": "Disain Kurikulum", "icon": "🔬", "category": "riset" },
+    { "name": "Bahasa Arab", "icon": "🗣", "category": "bahasa" },
+    { "name": "Bahasa Inggris (TOEFL 457)", "icon": "🗣", "category": "bahasa" },
+    { "name": "Manajemen Organisasi", "icon": "👥", "category": "kepemimpinan" },
+    { "name": "Kepemimpinan Komunitas", "icon": "👥", "category": "kepemimpinan" },
+    { "name": "Manajemen Dakwah", "icon": "👥", "category": "kepemimpinan" },
+    { "name": "Event Management", "icon": "👥", "category": "kepemimpinan" },
+    { "name": "Public Speaking", "icon": "👥", "category": "kepemimpinan" },
+    { "name": "Koordinasi Tim", "icon": "👥", "category": "kepemimpinan" }
+  ]
+}

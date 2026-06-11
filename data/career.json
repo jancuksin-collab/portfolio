@@ -1,0 +1,47 @@
+{
+  "career": [
+    {
+      "role": "Guru",
+      "org": "Madrasah An-Nidhamiyyah",
+      "period": "2024 – Sekarang",
+      "type": "Onsite",
+      "icon": "🏫"
+    },
+    {
+      "role": "Guru",
+      "org": "Pesantren Kebon Jambu Al-Islamy",
+      "period": "2017 – 2023",
+      "type": "6 tahun · Onsite",
+      "icon": "🏫"
+    },
+    {
+      "role": "Pengurus Divisi Dakwah Pesantren",
+      "org": "Pesantren Kebon Jambu Al-Islamy",
+      "period": "2021 – 2023",
+      "type": "2 tahun",
+      "icon": "🕌"
+    },
+    {
+      "role": "Pengurus Divisi Pendidikan",
+      "org": "Pesantren Kebon Jambu Al-Islamy",
+      "period": "2018 – 2021",
+      "type": "3 tahun",
+      "icon": "📚"
+    },
+    {
+      "role": "Pengurus Divisi Madrasah",
+      "org": "Madrasah Tahsinul Akhlak Kebon Jambu",
+      "period": "2017 – 2018",
+      "type": "1 tahun",
+      "icon": "📖"
+    }
+  ],
+  "organizations": [
+    { "year": 2019, "role": "Presiden — Dewan Eksekutif Mahasantri (DEMA)", "org": "Mahad Aly Kebon Jambu · Tingkat Perguruan Tinggi" },
+    { "year": 2022, "role": "Asisten Staff — Rahima", "org": "Luar Sekolah" },
+    { "year": 2022, "role": "Peserta — KUPI Muda", "org": "Pelatihan kepemimpinan ulama muda · Luar Sekolah" },
+    { "year": 2016, "role": "Ketua — Asosiasi Santri Babakan Asal Kuningan", "org": "Luar Sekolah" },
+    { "year": 2015, "role": "Wakil Ketua — Organisasi Santri Kuningan Asri", "org": "Luar Sekolah" },
+    { "year": 2015, "role": "Divisi Keagamaan — OSIS", "org": "Tingkat SMA" }
+  ]
+}

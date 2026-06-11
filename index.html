@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Nur Pauzi Al Bustomi — Guru &amp; Santri</title>
+  <meta name="description" content="Portfolio Muhammad Nur Pauzi Al Bustomi — Guru, peneliti Hukum Keluarga Islam, dan aktivis pendidikan pesantren." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Hydrate content from JSON files (Decap CMS source of truth)
+    window.__DATA__ = {};
+    async function loadJSON(path) {
+      const res = await fetch(path);
+      return res.json();
+    }
+    async function hydrate() {
+      const [profile, skills, achievements, projects, career, education, research] = await Promise.all([
+        loadJSON('data/profile.json'),
+        loadJSON('data/skills.json'),
+        loadJSON('data/achievements.json'),
+        loadJSON('data/projects.json'),
+        loadJSON('data/career.json'),
+        loadJSON('data/education.json'),
+        loadJSON('data/research.json')
+      ]);
+      window.__DATA__ = { profile, skills, achievements, projects, career, education, research };
+      document.dispatchEvent(new Event('data-ready'));
+    }
+    hydrate();
+  </script>
+</head>
+<body>
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="profile">
+      <div class="avatar">
+        <img src="assets/images/profile.jpg" alt="Muhammad Nur Pauzi Al Bustomi" />
+      </div>
+      <h1 class="profile-name">
+        Muhammad Nur Pauzi
+        <svg class="verified" viewBox="0 0 24 24" fill="currentColor" aria-label="Verified">
+          <path d="M12 1l2.39 2.39L18 3l.61 3.61L22 7l-1 3.39L22 14l-3 1-1 3.61-3.61.61L12 22l-2.39-1.39L6 21l-.61-3.61L2 17l1-3.39L2 10l3-1L6 5.39 9.61 5 12 2.61 12 1zm-1 13l5-5-1.41-1.41L11 11.17l-2.59-2.58L7 10l4 4z"/>
+        </svg>
+      </h1>
+      <button class="cta-collab">
+        <span class="dot"></span> Ayo Berkolaborasi
+      </button>
+
+      <div class="controls">
+        <div class="lang-toggle" role="tablist" aria-label="Language">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn active" data-lang="id">ID</button>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#beranda" class="nav-item active"><span class="nav-icon">⌂</span> Beranda <span class="nav-arrow">→</span></a>
+      <a href="#tentang" class="nav-item"><span class="nav-icon">👤</span> Tentang</a>
+      <a href="#kreasi" class="nav-item"><span class="nav-icon">📱</span> Kreasi</a>
+      <a href="#pencapaian" class="nav-item"><span class="nav-icon">🏆</span> Pencapaian</a>
+      <a href="#proyek" class="nav-item"><span class="nav-icon">🗂</span> Proyek</a>
+      <a href="#karier" class="nav-item"><span class="nav-icon">💼</span> Karier</a>
+      <a href="#pendidikan" class="nav-item"><span class="nav-icon">🎓</span> Pendidikan</a>
+      <a href="#riset" class="nav-item"><span class="nav-icon">🔬</span> Riset</a>
+      <a href="#kontak" class="nav-item"><span class="nav-icon">✉</span> Kontak</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="copyright">HAK CIPTA © 2026<br/>Muhammad Nur Pauzi. Seluruh hak cipta dilindungi undang-undang.</div>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <!-- HERO -->
+    <section id="beranda" class="hero">
+      <h2 class="hero-title">Halo, saya <span class="hl">Muhammad Nur Pauzi</span></h2>
+      <ul class="hero-meta">
+        <li><span class="dot">•</span> Berdomisili di Kuningan, Jawa Barat <span class="flag">ID</span></li>
+        <li><span class="dot">•</span> Onsite</li>
+      </ul>
+
+      <p class="hero-text">
+        Seorang guru, peneliti, dan pegiat pendidikan pesantren yang berdedikasi untuk membangun generasi
+        yang berilmu, berakhlak, dan berkhidmah pada umat. Saya mendalami khazanah <em>kitab kuning</em>
+        — khususnya Fiqh, Ushul Fiqh, dan Hukum Keluarga Islam — dengan pendekatan kontekstual
+        yang menyelaraskan tradisi Aswaja dan tantangan zaman.
+      </p>
+      <p class="hero-text">
+        Fokus saya adalah mengajar dengan metode yang terstruktur, meneliti dengan kerangka
+        <em>maqashid asy-syariah</em>, serta memimpin komunitas dengan komunikasi yang jernih dan
+        inklusif. Saya percaya bahwa ilmu yang bermanfaat adalah ilmu yang diamalkan dan
+        memberi dampak nyata di tengah masyarakat.
+      </p>
+
+      <hr class="divider" />
+
+      <!-- KEKHUSUSAN / SKILLS -->
+      <h3 class="section-title"><span class="section-icon">&lt;/&gt;</span> Keahlian</h3>
+      <p class="section-sub">Keahliuan profesional saya.</p>
+      <div class="filter-bar" id="skillFilters">
+        <button class="chip active" data-filter="all">Semua <span class="count">28</span></button>
+        <button class="chip" data-filter="mengajar">Mengajar <span class="count">6</span></button>
+        <button class="chip" data-filter="keilmuan">Keilmuan <span class="count">9</span></button>
+        <button class="chip" data-filter="riset">Riset <span class="count">5</span></button>
+        <button class="chip" data-filter="bahasa">Bahasa <span class="count">2</span></button>
+        <button class="chip" data-filter="kepemimpinan">Kepemimpinan <span class="count">6</span></button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- MENG AJAR -->
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Fiqh</span></div>
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Ushul Fiqh</span></div>
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Hukum Keluarga Islam</span></div>
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Tahsinul Akhlak</span></div>
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Baca Kitab Kuning</span></div>
+        <div class="skill-card" data-cat="mengajar"><span class="skill-icon">📖</span><span>Cerdas Cermat Agama</span></div>
+
+        <!-- KEILMUAN -->
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Tafsir</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Hadits</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Fath Al-Muin</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Matan Taqrib</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Ihya Ulumuddin</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Fath Al-Qarib</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Maqashid Asy-Syariah</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Fiqh Peradaban</span></div>
+        <div class="skill-card" data-cat="keilmuan"><span class="skill-icon">🕌</span><span>Hermeneutika gender</span></div>
+
+        <!-- RISET -->
+        <div class="skill-card" data-cat="riset"><span class="skill-icon">🔬</span><span>Penelitian Kualitatif</span></div>
+        <div class="skill-card" data-cat="riset"><span class="skill-icon">🔬</span><span>Studi Naskah</span></div>
+        <div class="skill-card" data-cat="riset"><span class="skill-icon">🔬</span><span>Analisis Fiqh</span></div>
+        <div class="skill-card" data-cat="riset"><span class="skill-icon">🔬</span><span>Penulisan Akademik</span></div>
+        <div class="skill-card" data-cat="riset"><span class="skill-icon">🔬</span><span>Disain Kurikulum</span></div>
+
+        <!-- BAHASA -->
+        <div class="skill-card" data-cat="bahasa"><span class="skill-icon">🗣</span><span>Bahasa Arab</span></div>
+        <div class="skill-card" data-cat="bahasa"><span class="skill-icon">🗣</span><span>Bahasa Inggris (TOEFL 457)</span></div>
+
+        <!-- KEPEMIMPINAN -->
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Manajemen Organisasi</span></div>
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Kepemimpinan Komunitas</span></div>
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Manajemen Dakwah</span></div>
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Event Management</span></div>
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Public Speaking</span></div>
+        <div class="skill-card" data-cat="kepemimpinan"><span class="skill-icon">👥</span><span>Koordinasi Tim</span></div>
+      </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang" class="section">
+      <h3 class="section-title"><span class="section-icon">👤</span> Tentang</h3>
+      <p class="section-sub">Sedikit tentang latar belakang, nilai, dan passion saya.</p>
+      <div class="about-card">
+        <p>
+          Saya tumbuh dan dibesarkan di lingkungan pesantren, belajar langsung dari
+          <em>kitab kuning</em> yang menjadi warisan intelektual kaum Nahdliyin. Pengalaman
+          sebagai pengurus divisi pendidikan dan dakwah教会 saya tentang pentingnya
+          kepemimpinan yang amanah, komunikasi yang jernih, dan kerja tim yang terstruktur.
+        </p>
+        <p>
+          Saat ini saya mengabdi sebagai guru di <strong>Madrasah An-Nidhamiyyah</strong> dan
+          aktif menulis di bidang Hukum Keluarga Islam. Saya percaya bahwa pendidikan
+          pesantren bukan sekadar transfer ilmu, tapi juga <em>tarbiyah</em> — pembentukan
+          karakter, adab, dan kemandirian berpikir.
+        </p>
+        <blockquote class="quote">
+          "Ngaji lan Jama'ah" — Belajar bersama, bergerak bersama.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- KREASI / KONTEN -->
+    <section id="kreasi" class="section">
+      <h3 class="section-title"><span class="section-icon">📱</span> Kreasi</h3>
+      <p class="section-sub">Karya, tulisan, dan konten pilihan saya.</p>
+      <div class="creations">
+        <article class="creation-card">
+          <div class="creation-cover cover-1">
+            <span class="creation-badge">Riset</span>
+            <span class="creation-title-overlay">Pemaksaan Perkawinan dalam Maqashid Asy-Syariah</span>
+          </div>
+          <div class="creation-meta">
+            <span>📄 2024 · Kajian Hukum</span>
+          </div>
+          <p class="creation-desc">Kajian kritis terhadap UU No. 12/2022 tentang Pemaksaan Perkawinan dalam kerangka Maqashid Asy-Syariah.</p>
+        </article>
+        <article class="creation-card">
+          <div class="creation-cover cover-2">
+            <span class="creation-badge">Riset</span>
+            <span class="creation-title-overlay">Kesetaraan Gender dalam Kepemimpinan Rumah Tangga</span>
+          </div>
+          <div class="creation-meta">
+            <span>📄 2023 · Kajian Fiqh</span>
+          </div>
+          <p class="creation-desc">Studi perbedaan pendapat ulama tentang kesetaraan gender dalam kepemimpinan rumah tangga menurut Hukum Islam.</p>
+        </article>
+        <article class="creation-card">
+          <div class="creation-cover cover-3">
+            <span class="creation-badge">Seminar</span>
+            <span class="creation-title-overlay">Seminar Hasil Studi Praksis Sosial</span>
+          </div>
+          <div class="creation-meta">
+            <span>🎤 2023 · Mahad Aly Kebon Jambu</span>
+          </div>
+          <p class="creation-desc">Pembicara dalam seminar hasil studi praksis sosial yang diselenggarakan Mahad Aly Kebon Jambu.</p>
+        </article>
+        <article class="creation-card">
+          <div class="creation-cover cover-4">
+            <span class="creation-badge">Konferensi</span>
+            <span class="creation-title-overlay">Islam & Christianity in Europe & SE Asia</span>
+          </div>
+          <div class="creation-meta">
+            <span>🌐 2024 · UIII × Yerevan State Univ.</span>
+          </div>
+          <p class="creation-desc">Peserta dalam konferensi internasional tentang relasi Islam-Kristen di Eropa dan Asia Tenggara.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRESTASI / PENCAPAIAN -->
+    <section id="pencapaian" class="section">
+      <h3 class="section-title"><span class="section-icon">🏆</span> Pencapaian</h3>
+      <p class="section-sub">Beberapa torehan prestasi yang pernah saya raih.</p>
+      <div class="achievement-list">
+        <div class="ach-item">
+          <div class="ach-medal gold">🥇</div>
+          <div class="ach-body">
+            <h4>Juara 1 Lomba Baca Kitab Fath Al-Muin</h4>
+            <p>Tingkat Kota/Kabupaten · 2018</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-medal gold">🥇</div>
+          <div class="ach-body">
+            <h4>Juara 1 Lomba Baca Kitab Matan Taqrib</h4>
+            <p>Tingkat Kota/Kabupaten · 2014</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-medal silver">🥈</div>
+          <div class="ach-body">
+            <h4>Juara 2 Lomba Baca Kitab Fath Al-Qarib</h4>
+            <p>Tingkat Kota/Kabupaten · 2021</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-medal bronze">🥉</div>
+          <div class="ach-body">
+            <h4>Juara 3 Lomba Baca Kitab Ihya Ulumuddin</h4>
+            <p>Tingkat Provinsi · 2019</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-medal gold">🥇</div>
+          <div class="ach-body">
+            <h4>Juara 1 Cerdas Cermat Agama (CCA) Kelas VII</h4>
+            <p>Tingkat Sekolah · 2012</p>
+          </div>
+        </div>
+        <div class="ach-item">
+          <div class="ach-medal cert">📜</div>
+          <div class="ach-body">
+            <h4>TOEFL ITP — Skor 457</h4>
+            <p>Sertifikat 2024 · Berlaku hingga 4 Februari 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="section">
+      <h3 class="section-title"><span class="section-icon">🗂</span> Proyek</h3>
+      <p class="section-sub">Beberapa inisiatif dan karya yang pernah saya bangun.</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#10b981">📚</div>
+            <div>
+              <h4>Kurikulum Baca Kitab Terstruktur</h4>
+              <p class="project-tag">Pendidikan · 2023</p>
+            </div>
+          </div>
+          <p>Disain kurikulum baca kitab kuning bertahap untuk mahasantri pemula — dari Matan Taqrib hingga Fath Al-Muin, dengan target hafalan dan pemahaman metodologis.</p>
+          <div class="project-tags">
+            <span>Fiqh</span><span>Kurikulum</span><span>Pesantren</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#f59e0b">🕌</div>
+            <div>
+              <h4>Program Dakwah Rutin Pesantren</h4>
+              <p class="project-tag">Dakwah · 2021 – 2023</p>
+            </div>
+          </div>
+          <p>Mengkoordinasikan divisi dakwah pesantren — pengajian rutin, khatib muda, dan pelatihan ceramah untuk para pengurus.</p>
+          <div class="project-tags">
+            <span>Manajemen</span><span>Dakwah</span><span>Leadership</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#6366f1">🔬</div>
+            <div>
+              <h4>Riset Hukum Keluarga Islam</h4>
+              <p class="project-tag">Akademik · 2024</p>
+            </div>
+          </div>
+          <p>Penelitian tentang pemaksaan perkawinan dalam perspektif Maqashid Asy-Syariah dan implementasinya pada UU No. 12/2022.</p>
+          <div class="project-tags">
+            <span>Riset</span><span>Maqashid</span><span>Hukum Keluarga</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#ec4899">👥</div>
+            <div>
+              <h4>Asosiasi Santri Babakan</h4>
+              <p class="project-tag">Organisasi · 2016</p>
+            </div>
+          </div>
+          <p>Mendirikan dan memimpin Asosiasi Santri Babakan Asal Kuningan — jejaring alumni pesantren untuk kolaborasi dan pengembangan umat.</p>
+          <div class="project-tags">
+            <span>Organisasi</span><span>Komunitas</span><span>Networking</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#0ea5e9">🎓</div>
+            <div>
+              <h4>Panitia Konferensi &amp; Seminar</h4>
+              <p class="project-tag">Event · 2019 – 2022</p>
+            </div>
+          </div>
+          <p>Menjadi panitia utama dalam 7+ seminar dan konferensi bertema Fiqh, Mubadalah, dan Pemikiran Islam Kontemporer di Mahad Aly Kebon Jambu.</p>
+          <div class="project-tags">
+            <span>Event</span><span>Akademik</span><span>Koordinasi</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <div class="project-icon" style="--c:#8b5cf6">🌐</div>
+            <div>
+              <h4>Partisipasi KUPI Muda</h4>
+              <p class="project-tag">Jejaring Nasional · 2022</p>
+            </div>
+          </div>
+          <p>Peserta aktif dalam program KUPI Muda — pelatihan kepempinan ulama perempuan muda yang diampu oleh KUPI (Kongres Ulama Perempuan Indonesia).</p>
+          <div class="project-tags">
+            <span>KUPI</span><span>Kepemimpinan</span><span>Nasional</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- KARIER -->
+    <section id="karier" class="section">
+      <h3 class="section-title"><span class="section-icon">💼</span> Karier</h3>
+      <p class="section-sub">Perjalanan profesional saya.</p>
+
+      <div class="career-list">
+        <article class="career-card">
+          <div class="career-logo">🏫</div>
+          <div class="career-body">
+            <h4>Guru</h4>
+            <p class="career-org">Madrasah An-Nidhamiyyah</p>
+            <ul class="career-meta">
+              <li>2024 – Sekarang</li>
+              <li>·</li>
+              <li>Onsite</li>
+            </ul>
+            <button class="career-toggle">Tampilkan detail</button>
+          </div>
+        </article>
+
+        <article class="career-card">
+          <div class="career-logo">🏫</div>
+          <div class="career-body">
+            <h4>Guru</h4>
+            <p class="career-org">Pesantren Kebon Jambu Al-Islamy</p>
+            <ul class="career-meta">
+              <li>2017 – 2023</li>
+              <li>·</li>
+              <li>6 tahun</li>
+              <li>·</li>
+              <li>Onsite</li>
+            </ul>
+            <button class="career-toggle">Tampilkan detail</button>
+          </div>
+        </article>
+
+        <article class="career-card">
+          <div class="career-logo">🕌</div>
+          <div class="career-body">
+            <h4>Pengurus Divisi Dakwah Pesantren</h4>
+            <p class="career-org">Pesantren Kebon Jambu Al-Islamy</p>
+            <ul class="career-meta">
+              <li>2021 – 2023</li>
+              <li>·</li>
+              <li>2 tahun</li>
+            </ul>
+            <button class="career-toggle">Tampilkan detail</button>
+          </div>
+        </article>
+
+        <article class="career-card">
+          <div class="career-logo">📚</div>
+          <div class="career-body">
+            <h4>Pengurus Divisi Pendidikan</h4>
+            <p class="career-org">Pesantren Kebon Jambu Al-Islamy</p>
+            <ul class="career-meta">
+              <li>2018 – 2021</li>
+              <li>·</li>
+              <li>3 tahun</li>
+            </ul>
+            <button class="career-toggle">Tampilkan detail</button>
+          </div>
+        </article>
+
+        <article class="career-card">
+          <div class="career-logo">📖</div>
+          <div class="career-body">
+            <h4>Pengurus Divisi Madrasah</h4>
+            <p class="career-org">Madrasah Tahsinul Akhlak Kebon Jambu</p>
+            <ul class="career-meta">
+              <li>2017 – 2018</li>
+              <li>·</li>
+              <li>1 tahun</li>
+            </ul>
+            <button class="career-toggle">Tampilkan detail</button>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="section-title sub-section"><span class="section-icon">👥</span> Pengalaman Organisasi</h3>
+      <div class="org-list">
+        <div class="org-item">
+          <div class="org-year">2019</div>
+          <div class="org-body">
+            <h4>Presiden — Dewan Eksekutif Mahasantri (DEMA)</h4>
+            <p>Mahad Aly Kebon Jambu · Tingkat Perguruan Tinggi</p>
+          </div>
+        </div>
+        <div class="org-item">
+          <div class="org-year">2022</div>
+          <div class="org-body">
+            <h4>Asisten Staff — Rahima</h4>
+            <p>Luar Sekolah</p>
+          </div>
+        </div>
+        <div class="org-item">
+          <div class="org-year">2022</div>
+          <div class="org-body">
+            <h4>Peserta — KUPI Muda</h4>
+            <p>Pelatihan kepemimpinan ulama muda · Luar Sekolah</p>
+          </div>
+        </div>
+        <div class="org-item">
+          <div class="org-year">2016</div>
+          <div class="org-body">
+            <h4>Ketua — Asosiasi Santri Babakan Asal Kuningan</h4>
+            <p>Luar Sekolah</p>
+          </div>
+        </div>
+        <div class="org-item">
+          <div class="org-year">2015</div>
+          <div class="org-body">
+            <h4>Wakil Ketua — Organisasi Santri Kuningan Asri</h4>
+            <p>Luar Sekolah</p>
+          </div>
+        </div>
+        <div class="org-item">
+          <div class="org-year">2015</div>
+          <div class="org-body">
+            <h4>Divisi Keagamaan — OSIS</h4>
+            <p>Tingkat SMA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section id="pendidikan" class="section">
+      <h3 class="section-title"><span class="section-icon">🎓</span> Pendidikan</h3>
+      <p class="section-sub">Latar belakang akademis saya.</p>
+      <div class="edu-list">
+        <article class="edu-card">
+          <div class="edu-year">2018 – 2024</div>
+          <div class="edu-body">
+            <h4>S1 — Hukum Keluarga Islam</h4>
+            <p>Institut Studi Islam Fahmina</p>
+            <ul class="edu-meta">
+              <li>IPK: 3.34</li>
+              <li>NIM: 18110019</li>
+              <li class="status lulus">Lulus</li>
+            </ul>
+          </div>
+        </article>
+        <article class="edu-card">
+          <div class="edu-year">2018 – 2023</div>
+          <div class="edu-body">
+            <h4>S1 — Fiqh &amp; Ushul Fiqh</h4>
+            <p>Mahad Aly Kebon Jambu</p>
+            <ul class="edu-meta">
+              <li>IPK: 3.34</li>
+              <li>NIM: 171709104030</li>
+              <li class="status lulus">Lulus</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- RISET & KARYA ILMIAH -->
+    <section id="riset" class="section">
+      <h3 class="section-title"><span class="section-icon">🔬</span> Riset &amp; Karya Ilmiah</h3>
+      <p class="section-sub">Riset dan partisipasi ilmiah yang pernah saya lakukan.</p>
+
+      <h4 class="sub-head">📄 Pengalaman Riset</h4>
+      <div class="research-list">
+        <div class="research-item">
+          <div class="research-year">2024</div>
+          <div class="research-body">
+            <h4>Pemaksaan Perkawinan dalam Maqashid Asy-Syariah; Studi atas Undang-Undang Nomor 12 Tahun 2022</h4>
+            <p>Sumber Dana: Pribadi</p>
+          </div>
+        </div>
+        <div class="research-item">
+          <div class="research-year">2023</div>
+          <div class="research-body">
+            <h4>Perbedaan Pendapat tentang Kesetaraan Gender dalam Kepemimpinan Rumah Tangga Menurut Hukum Islam</h4>
+            <p>Sumber Dana: Pribadi</p>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="sub-head">🎤 Konferensi &amp; Seminar</h4>
+      <div class="conf-list">
+        <div class="conf-item speaker">
+          <div class="conf-year">2023</div>
+          <div class="conf-body">
+            <h4>Seminar Hasil Studi Praksis Sosial</h4>
+            <p>Mahad Aly Kebon Jambu · <strong>Pembicara</strong></p>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-year">2024</div>
+          <div class="conf-body">
+            <h4>Islam and Christianity in Europe and Southeast Asia</h4>
+            <p>UIII × Yerevan State University · Peserta</p>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-year">2024</div>
+          <div class="conf-body">
+            <h4>Islamic Feminism: Evaluation and the Way Forward</h4>
+            <p>Faculty of Islamic Studies UIII × Islamic Global Challenges · Peserta</p>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-year">2022</div>
+          <div class="conf-body">
+            <h4>Halaqoh Fiqh Peradaban NU</h4>
+            <p>DEMA Mahad Aly Kebon Jambu × Pesantren Kebon Jambu · Peserta</p>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-year">2020</div>
+          <div class="conf-body">
+            <h4>Masa Depan Ulama Perempuan</h4>
+            <p>Mahad Aly Kebon Jambu × KUPI · Peserta</p>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="sub-head">🛠 Pelatihan &amp; Workshop</h4>
+      <div class="training-list">
+        <div class="training-item">
+          <span>2023-12-04</span>
+          <span>Kursus Bahasa Inggris — SMART International Language College</span>
+        </div>
+        <div class="training-item">
+          <span>2023-09-25</span>
+          <span>Kursus Bahasa Inggris — Titik Nol English Course</span>
+        </div>
+        <div class="training-item">
+          <span>2018-04-23</span>
+          <span>Kursus Bahasa Arab — Markaz Arabiyah</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="section">
+      <h3 class="section-title"><span class="section-icon">✉</span> Kontak</h3>
+      <p class="section-sub">Mari terhubung dan berkolaborasi.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:albustomipauzi@gmail.com">
+          <div class="contact-icon" style="--c:#ef4444">✉</div>
+          <div>
+            <h4>Email</h4>
+            <p>albustomipauzi@gmail.com</p>
+          </div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon" style="--c:#10b981">📍</div>
+          <div>
+            <h4>Lokasi</h4>
+            <p>Kuningan, Jawa Barat, Indonesia</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon" style="--c:#3b82f6">🌐</div>
+          <div>
+            <h4>Status</h4>
+            <p>Onsite · Terbuka untuk kolaborasi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>HAK CIPTA © 2026 — Muhammad Nur Pauzi Al Bustomi. Dibuat dengan ❤ untuk umat.</p>
+    </footer>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <a class="admin-link" href="admin/" target="_blank" rel="noopener" title="Buka Dashboard Admin">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06a1.65 1.65 0 001.82.33h.01a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+    <span>Admin</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

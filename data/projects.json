@@ -1,0 +1,52 @@
+{
+  "projects": [
+    {
+      "title": "Kurikulum Baca Kitab Terstruktur",
+      "tag": "Pendidikan · 2023",
+      "icon": "📚",
+      "color": "#10b981",
+      "description": "Disain kurikulum baca kitab kuning bertahap untuk mahasantri pemula — dari Matan Taqrib hingga Fath Al-Muin, dengan target hafalan dan pemahaman metodologis.",
+      "tags": ["Fiqh", "Kurikulum", "Pesantren"]
+    },
+    {
+      "title": "Program Dakwah Rutin Pesantren",
+      "tag": "Dakwah · 2021 – 2023",
+      "icon": "🕌",
+      "color": "#f59e0b",
+      "description": "Mengkoordinasikan divisi dakwah pesantren — pengajian rutin, khatib muda, dan pelatihan ceramah untuk para pengurus.",
+      "tags": ["Manajemen", "Dakwah", "Leadership"]
+    },
+    {
+      "title": "Riset Hukum Keluarga Islam",
+      "tag": "Akademik · 2024",
+      "icon": "🔬",
+      "color": "#6366f1",
+      "description": "Penelitian tentang pemaksaan perkawinan dalam perspektif Maqashid Asy-Syariah dan implementasinya pada UU No. 12/2022.",
+      "tags": ["Riset", "Maqashid", "Hukum Keluarga"]
+    },
+    {
+      "title": "Asosiasi Santri Babakan",
+      "tag": "Organisasi · 2016",
+      "icon": "👥",
+      "color": "#ec4899",
+      "description": "Mendirikan dan memimpin Asosiasi Santri Babakan Asal Kuningan — jejaring alumni pesantren untuk kolaborasi dan pengembangan umat.",
+      "tags": ["Organisasi", "Komunitas", "Networking"]
+    },
+    {
+      "title": "Panitia Konferensi &amp; Seminar",
+      "tag": "Event · 2019 – 2022",
+      "icon": "🎓",
+      "color": "#0ea5e9",
+      "description": "Menjadi panitia utama dalam 7+ seminar dan konferensi bertema Fiqh, Mubadalah, dan Pemikiran Islam Kontemporer di Mahad Aly Kebon Jambu.",
+      "tags": ["Event", "Akademik", "Koordinasi"]
+    },
+    {
+      "title": "Partisipasi KUPI Muda",
+      "tag": "Jejaring Nasional · 2022",
+      "icon": "🌐",
+      "color": "#8b5cf6",
+      "description": "Peserta aktif dalam program KUPI Muda — pelatihan kepempinan ulama perempuan muda yang diampu oleh KUPI (Kongres Ulama Perempuan Indonesia).",
+      "tags": ["KUPI", "Kepemimpinan", "Nasional"]
+    }
+  ]
+}
