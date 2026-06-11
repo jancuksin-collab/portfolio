@@ -2,8 +2,6 @@ backend:
   name: github
   repo: jancuksin-collab/portfolio
   branch: main
-  base_url: https://8s2y5ksfguf4.space.minimax.io
-  auth_endpoint: api/auth
 
 # Branch tempat preview (opsional)
 publish_mode: editorial_workflow
@@ -11,6 +9,8 @@ publish_mode: editorial_workflow
 # Live preview URL
 site_url: https://jancuksin-collab.github.io/portfolio
 display_url: https://jancuksin-collab.github.io/portfolio
+base_url: https://jancuksin-collab.github.io/portfolio
+auth_endpoint: api/auth
 logo_url: https://api.iconify.design/mdi/book-open-page-variant.svg?color=%23facc15
 
 # Tell the CMS where the assets live
